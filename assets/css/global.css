@@ -1,14 +1,24 @@
 *, *::after, *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("./fonts/icomoon.ttf.css");
+  src: url("./fonts/icomoon.eot.css#iefix") format("embedded-opentype"), url("./fonts/icomoon.woff.css") format("woff");
+}
 body {
   width: 100%;
   height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 img, svg {
@@ -24,22 +34,56 @@ li {
   list-style: none;
 }
 
-.header {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.hero {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 24px 0;
+  justify-content: space-between;
+}
+.hero__headline {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 48%;
+}
+.hero__headline h2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+}
+.hero__headline img {
+  width: 32px;
+}
+.hero__image {
+  width: 48%;
 }
 
+.btn {
+  cursor: pointer;
+  border: none;
+  width: 148px;
+  border-radius: 15px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #232F34;
+}
+
+.btn-primary {
+  background-color: #F9AA33;
+  transition: 300ms;
+}
+.btn-primary:hover {
+  filter: brightness(0.9);
+  color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
 .header__logo {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #4A6572;
@@ -47,32 +91,39 @@ li {
   font-size: 40px;
   line-height: 100%;
 }
-
 .header__logo--lio {
   color: #F9AA33;
 }
-
 .header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header__nav--item {
   margin-right: 24px;
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
 }
-
 .header__nav--item:last-child {
   margin-right: 0;
 }
-
+.header__nav--item a {
+  transition: 300ms;
+}
+.header__nav--item a:hover {
+  color: #F9AA33;
+}
 .header__nav--item-link {
   color: #1C1B1B;
 }
-/*# sourceMappingURL=global.css.map */
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__wrapper .icon-sun::before {
+  margin-left: 45px;
+  font-family: "icomoon";
+  content: "\e936";
+  font-size: 32px;
+  color: #F9AA33;
+}/*# sourceMappingURL=global.css.map */

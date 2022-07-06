@@ -1,0 +1,22 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  width: 148px;
+  border-radius: 15px;
+  height: 48px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: $tertiary-color;
+}
+
+.btn-primary {
+  background-color: $secondary-color;
+  transition: 300ms;
+  &:hover{
+    filter: brightness(0.9);
+    color: $white-light;
+  }
+}

@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+
+  &__headline {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 48%;
+
+    h2 {
+      //width: 625px;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 120%;
+    }
+    img {
+      width: 32px;
+    }
+  }
+
+  &__image{
+    width: 48%;
+  }
+}

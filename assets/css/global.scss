@@ -6,6 +6,7 @@
 }
 
 @import 'partials/color';
+@import 'partials/typography';
 
 body {
   width: 100%;
@@ -13,9 +14,15 @@ body {
 }
 
 $container-xl: 1440px;
-$container-l: 1140px;
+$container-l: 1280px;
 $container-m: 960px;
 $container-s: 540px;
+
+.container{
+  width: 100%;
+  max-width: $container-l;
+  margin: 0 auto;
+}
 
 
 img, svg {

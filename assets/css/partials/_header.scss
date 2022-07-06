@@ -1,7 +1,4 @@
 .header {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,9 +25,16 @@
       font-weight: 600;
       font-size: 24px;
       line-height: 120%;
-
+      
       &:last-child {
         margin-right: 0;
+      }
+
+      a{
+        transition: 300ms;
+        &:hover{
+          color: $secondary-color;
+        }
       }
     }
 
@@ -38,4 +42,18 @@
       color: $black-light;
     }
   }
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    .icon-sun{
+      &::before{
+        margin-left: 45px;
+        font-family: 'icomoon';
+        content: "\e936";
+        font-size: 32px;
+        color: $secondary-color;
+      }
+    }
+  }
+
 }
