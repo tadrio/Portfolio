@@ -8,7 +8,7 @@
     font-family: "Be Vietnam Pro", sans-serif;
     color: $complementary-color;
     font-weight: 700;
-    font-size: 40px;
+    font-size: calculator-rem(40);
     line-height: 100%;
 
     &--lio {
@@ -23,7 +23,7 @@
     &--item {
       margin-right: 24px;
       font-weight: 600;
-      font-size: 24px;
+      font-size: calculator-rem(24);
       line-height: 120%;
       
       &:last-child {
@@ -46,12 +46,8 @@
     display: flex;
     align-items: center;
     .icon-sun{
-      &::before{
+      @include before-icon("\e936", calculator-rem(32), $secondary-color){
         margin-left: 45px;
-        font-family: 'icomoon';
-        content: "\e936";
-        font-size: 32px;
-        color: $secondary-color;
       }
     }
   }

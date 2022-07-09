@@ -3,11 +3,11 @@
   border: none;
   width: 148px;
   border-radius: 15px;
-  height: 48px;
+  height: calculator-rem(48);
 
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: calculator-rem(18);
   line-height: 120%;
   color: $tertiary-color;
 }
@@ -17,6 +17,15 @@
   transition: 300ms;
   &:hover{
     filter: brightness(0.9);
-    color: $white-light;
+  }
+}
+.btn-secondary {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: calculator-rem(4);
+  @include after-icon("\e905", calculator-rem(18), $tertiary-color){
+    margin-left: calculator-rem(15);
   }
 }

@@ -37,7 +37,7 @@ a {
 li {
   list-style: none;
 }
-
+@import 'partials/mixins';
 @import 'partials/layout';
 @import 'partials/button';
 @import 'partials/header';

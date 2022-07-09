@@ -37,6 +37,7 @@ li {
 .hero {
   display: flex;
   justify-content: space-between;
+  margin-top: 8rem;
 }
 .hero__headline {
   display: flex;
@@ -46,11 +47,24 @@ li {
 }
 .hero__headline h2 {
   font-weight: 700;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 120%;
 }
-.hero__headline img {
-  width: 32px;
+.hero__headline p {
+  margin-top: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: #444444;
+}
+.hero__headline p img {
+  width: 2rem;
+  display: inline-block;
+}
+.hero__headline--wrapper {
+  margin-top: 3rem;
+  display: flex;
 }
 .hero__image {
   width: 48%;
@@ -61,10 +75,10 @@ li {
   border: none;
   width: 148px;
   border-radius: 15px;
-  height: 48px;
+  height: 3rem;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 120%;
   color: #232F34;
 }
@@ -75,7 +89,22 @@ li {
 }
 .btn-primary:hover {
   filter: brightness(0.9);
-  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.25rem;
+}
+.btn-secondary::after {
+  display: inline-block;
+  font-family: "icomoon";
+  content: "\e905";
+  font-size: 1.125rem;
+  color: #232F34;
+  margin-left: 0.9375rem;
 }
 
 .header {
@@ -88,7 +117,7 @@ li {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #4A6572;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 100%;
 }
 .header__logo--lio {
@@ -101,7 +130,7 @@ li {
 .header__nav--item {
   margin-right: 24px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 120%;
 }
 .header__nav--item:last-child {
@@ -121,9 +150,10 @@ li {
   align-items: center;
 }
 .header__wrapper .icon-sun::before {
-  margin-left: 45px;
+  display: inline-block;
   font-family: "icomoon";
   content: "\e936";
-  font-size: 32px;
+  font-size: 2rem;
   color: #F9AA33;
+  margin-left: 45px;
 }/*# sourceMappingURL=global.css.map */

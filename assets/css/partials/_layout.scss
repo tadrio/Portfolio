@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  margin-top: calculator-rem(128);
 
   &__headline {
     display: flex;
@@ -11,15 +12,28 @@
     h2 {
       //width: 625px;
       font-weight: 700;
-      font-size: 64px;
+      font-size: calculator-rem(64);
       line-height: 120%;
     }
-    img {
-      width: 32px;
+    p {
+      margin-top: calculator-rem(48);
+      font-style: normal;
+      font-weight: 500;
+      font-size: calculator-rem(18);
+      line-height: 120%;
+      color: $gray-3;
+      img {
+        width: calculator-rem(32);
+        display: inline-block;
+      }
+    }
+    &--wrapper{
+      margin-top: calculator-rem(48);
+      display: flex;
     }
   }
 
-  &__image{
+  &__image {
     width: 48%;
   }
 }
